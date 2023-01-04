@@ -71,7 +71,7 @@ body {
     margin-right: auto;
 }
 
-.centercol img[src="IMAGENS/001.jpg"] {
+.centercol img[src="/SRC/IMAGENS/001.jpg"] {
     z-index: 4000;
     width: 100%;
     height: 100%;
