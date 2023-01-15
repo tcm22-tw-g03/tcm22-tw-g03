@@ -1,8 +1,6 @@
 body {
-    background: white
+    background: #EEE4D4;
 }
-
-
 
 .logo {
     position: fixed;
@@ -16,7 +14,7 @@ body {
 
 .Homebutton {
     color: black;
-    background-color: #EEE4D4;
+    background-color: #d5bc93;
     border: 0ch;
     float: left;
     padding-left: 55px;
@@ -33,7 +31,7 @@ body {
 .header {
     z-index: 9990;
     color: black;
-    background-color: #EEE4D4;
+    background-color: #d5bc93;
     padding: 10px 20px;
     width: 100%;
     height: max-content;
@@ -47,7 +45,7 @@ body {
 
 .headerright {
     color: black;
-    background-color: #EEE4D4;
+    background-color: #d5bc93;
     padding: 20px;
     float: right !important;
     z-index: 9000;
@@ -107,7 +105,7 @@ body {
 .footer {
     z-index: 9990;
     color: black;
-    background-color: #EEE4D4;
+    background-color: #d5bc93;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -120,7 +118,13 @@ body {
     text-align: center;
     width: 50px;
     height: 50px;
-    
+}
+
+.news {
+    width: 676px;
+    max-height: fit-content;
+    margin-bottom: 30px;
+    margin-top: 60px;
 }
 /* ASSEGUIR A ISTO SAO CENAS RANDOM PARA ALINHAR E ASSIM*/
 /* ASSEGUIR A ISTO SAO CENAS RANDOM PARA ALINHAR E ASSIM*/
@@ -130,7 +134,10 @@ body {
 }
 
 .center {
-    text-align: center !important;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
 }
 
 a:link {
@@ -140,4 +147,18 @@ a:link {
 
 a:visited {
     color: black;
+}
+
+.bold {
+    font-size: large;
+}
+
+.margin {
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.marginimage {
+    margin: 30px;
+    padding-top: 30px;
 }
