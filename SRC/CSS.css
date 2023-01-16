@@ -178,3 +178,33 @@ a:visited {
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.centerimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid white;
+}
+
+
+[data-columns] {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  [data-columns] > div {
+    height: 100px;
+    background: white;
+  }
+  
+  [data-columns="2"] {
+    background: #64B5F6;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  body {
+    margin: 1rem;
+  }
