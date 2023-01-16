@@ -389,3 +389,16 @@ iframe {
     overflow: hidden;
     float: left;
 }
+
+table {
+	width: 800px;
+    border: 5px solid white;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+th, td {
+    background-color: #d5bc93;
+    align-content: center;
+  }
