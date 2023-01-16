@@ -190,3 +190,56 @@ button {
     align-self: center;
     text-align: center;
 }
+
+/* ASSEGUIR A ISTO SAO IMG WRAPS PARA NOTICIAS */
+/* ASSEGUIR A ISTO SAO IMG WRAPS PARA NOTICIAS */
+
+.img__wrap {
+    position: relative;
+  }
+  
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(55, 59, 61, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: larger;
+    text-align: center;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .centercolesq {
+    z-index: 5000;
+    color: black;
+    width: 99%;
+    height: max-content;
+    box-sizing: inherit;
+    position: relative;
+    overflow: hidden;
+    max-width: 670px;
+    float: inline-start;
+  }
+
+.centercoldir {
+    z-index: 5000;
+    color: black;
+    width: 99%;
+    height: max-content;
+    box-sizing: inherit;
+    position: relative;
+    overflow: hidden;
+    max-width: 670px;
+    float: inline-end;
+}
