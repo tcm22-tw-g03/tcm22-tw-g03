@@ -22,50 +22,58 @@
         </div>
     </div>
     <img class="rules" src="IMAGENS/002.jpg">
-    <div class="centertext">
-        <P>Tennis is a sport that originated in England around the 19th century and is now played in a host of countries
+
+    <button href="#" class="centertext" id="btn-Convert-Html2Image" onclick="trocarDivPorImagem()" style=z-index:9980; >Court Layout</button>
+
+    <div id="tudo" class="centertext aMostrar">
+
+        <p><mark>Tennis</mark> is a sport that originated in England around the 19th century and is now played in a host
+            of countries
             around the world. There are four major tournaments known as the ‘majors’ that include Wimbledon, US Open,
-            French Open and Australian tournament.</P>
+            French Open and Australian tournament.</p>
 
         <h2>
-            <p style="text-align:center;"><u>Object of the Game
-        </h2></u>
+            <p style="text-align:center;"><u>Object of the Game</u>
+        </h2>
 
-        <P>The game of tennis played on a rectangular court with a net running across the centre. The aim is to hit the
+        <p>The game of tennis played on a rectangular court with a net running across the centre. The aim is to hit the
             ball over the net landing the ball within the margins of the court and in a way that results in your
             opponent being unable to return the ball. You win a point every time your opponent is unable to return the
-            ball within the court.</P>
-
-        <h2> <p style="text-align:center;"><u>Players & Equipment</h2></p></u>
-                A tennis match can be played by either one player on each side – a singles match – or two players on each
-                side – a doubles match. The rectangular shaped court has a base line (at the back), service areas (two
-                spaces just over the net in which a successful serve must land in) and two tram lines down either side.
-                A
-                singles match will mean you use the inner side tram line and a doubles match will mean you use the outer
-                tram line.
-
-        <P>
-            <l>A court can be played on four main surfaces including grass, clay, hard surface and carpet. Each
-                tournament
-                will
-                choose one surface type and stick without throughout. All that is required in terms of equipment is a
-                stringed
-                racket each and a tennis ball.
-        </P>
-        </ul>
+            ball within the court.</p>
 
         <h2>
-            <p style="text-align:center;"><u>Scoring
-        </h2></u>
+            <p style="text-align:center;"><u>Players & Equipment</u>
+        </h2>
+        </p>
+        A tennis match can be played by either one player on each side – a singles match – or two players on each
+        side – a doubles match. The rectangular shaped court has a base line (at the back), service areas (two
+        spaces just over the net in which a successful serve must land in) and two tram lines down either side.
+        A
+        singles match will mean you use the inner side tram line and a doubles match will mean you use the outer
+        tram line.
 
-        <P>You need to score four points to win a game of tennis. The points are known as 15 (1 point), 30 (two
+        <p>
+            A court can be played on four main surfaces including grass, clay, hard surface and carpet. Each
+            tournament
+            will
+            choose one surface type and stick without throughout. All that is required in terms of equipment is a
+            stringed
+            racket each and a tennis ball.
+
+        </p>
+
+        <h2>
+            <p style="text-align:center;"><u>Scoring</u>
+        </h2>
+
+        <p>You need to score four points to win a game of tennis. The points are known as 15 (1 point), 30 (two
             points), 40 (three points) and the fourth would result in the winning point and the end of that game. If the
             scores went to 40-40 this would be known as deuce. When a game reaches deuce the player must then win by two
-            clear points.</P>
+            clear points.</p>
 
         <h2>
-            <p style="text-align:center;"><u>Winning the Game
-        </h2></u>
+            <p style="text-align:center;"><u>Winning the Game</u>
+        </h2>
 
         To win the game you must win a certain amount of sets (best of three for women’s matches and best of 5 sets for
         men’s matches). Winning a set is simply the first player to reach 6 games but have to be clear by at least 2
@@ -73,12 +81,14 @@
         and it’s simply the first player to 7 points.
 
         <h2>
-            <p style="text-align:center;"><u>Rules of Tennis
-        </h2></u>
+            <p style="text-align:center;"><u>Rules of Tennis</u>
+        </h2>
+
         <ul>
             <li>The game starts with a coin toss to determine which player must serve first and which side they want to
                 serve
                 from.</li>
+                <ul>
             <li>The server must then serve each point from alternative sides on the base line. At no point must the
                 server’s
                 feet move in front of the baseline on the court prior to hitting their serve.</li>
@@ -90,6 +100,7 @@
                 that serve again without penalty. If the ball hits the net and fails to go in the service area then out
                 is
                 called and they lose that serve.</li>
+                </ul>
             <li>The receiver may stand where they wish upon receipt of the serve. If the ball is struck without the
                 serve
                 bouncing then the server will receive the point.</li>
@@ -121,14 +132,39 @@
     </div>
 
     <a href="index.html"> Back to top</a>
-    
+
     <div class="footer">
         <div>
-            <a href="https://www.instagram.com/tennischannel/?hl=en" target="_blank"><img class="socials" src="/SRC/IMAGENS/icon 1.png"></a>
-            <a href="https://www.facebook.com/TennisMedia/" target="_blank"> <img class="socials" src="/SRC/IMAGENS/icon 3.png"></a>
-            <a href="https://www.youtube.com/channel/UCDitdIjOjS9Myza9I21IqzQ" target="_blank"><img class="socials" src="/SRC/IMAGENS/icon 2.png"></a>
+            <a href="https://www.instagram.com/tennischannel/?hl=en" target="_blank"><img class="socials"
+                    src="/SRC/IMAGENS/icon 1.png"></a>
+            <a href="https://www.facebook.com/TennisMedia/" target="_blank"> <img class="socials"
+                    src="/SRC/IMAGENS/icon 3.png"></a>
+            <a href="https://www.youtube.com/channel/UCDitdIjOjS9Myza9I21IqzQ" target="_blank"><img class="socials"
+                    src="/SRC/IMAGENS/icon 2.png"></a>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var divTudo = "";
+
+        function trocarDivPorImagem() {
+            var element = document.getElementById('tudo');
+
+            if (element.classList.contains("aMostrar")){
+                
+                divTudo = element.innerHTML;
+                element.classList.remove("aMostrar");
+                element.classList.add("escondido");
+                document.getElementById('tudo').innerHTML = "<img src=\"IMAGENS/004.png\" alt=''>"
+            }
+            else if(element.classList.contains("escondido")){
+
+                element.classList.remove("escondido");
+                element.classList.add("aMostrar");
+                document.getElementById('tudo').innerHTML = divTudo
+            }
+        }
+    </script>
 </body>
 
 </html>
