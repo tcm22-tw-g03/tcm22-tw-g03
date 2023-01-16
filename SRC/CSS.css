@@ -87,6 +87,7 @@ body {
     max-width: 1366px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .rules {
@@ -271,3 +272,4 @@ a:visited {
     background: #64B5F6;
     grid-template-columns: repeat(2, 1fr);
   }
+
