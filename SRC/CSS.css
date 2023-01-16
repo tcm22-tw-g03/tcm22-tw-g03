@@ -179,7 +179,6 @@ a:visited {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-<<<<<<< HEAD
 .centerimage {
     display: flex;
     justify-content: center;
@@ -195,30 +194,13 @@ a:visited {
     padding: 1rem;
     margin: 0 0 1rem 0;
   }
-  
+
   [data-columns] > div {
     height: 100px;
     background: white;
   }
-  
+
   [data-columns="2"] {
     background: #64B5F6;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  body {
-    margin: 1rem;
-  }
-=======
-li {
-    list-style: square;
-}
-
-button {
-    display: grid;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-}
->>>>>>> 9a5fc91953c6044611def0797784f9838a5316d0
