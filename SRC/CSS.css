@@ -12,6 +12,16 @@ body {
     margin-top: 0%;
 }
 
+.logo2 {
+    position: fixed;
+    z-index: 9993;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    padding-bottom: 12px;
+    margin-top: 0%;
+}
+
 .Homebutton {
     color: black;
     background-color: #d5bc93;
@@ -119,6 +129,7 @@ body {
     text-align: center;
     width: 50px;
     height: 50px;
+    align-items: center;
 }
 
 .news {
@@ -208,14 +219,17 @@ a:visited {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(55, 59, 61, 0.72);
+    background: rgba(55, 59, 61, 0.906);
     color: #fff;
     visibility: hidden;
     opacity: 0;
     font-size: larger;
     text-align: center;
-  
-    /* transition effect. not necessary */
+    display: grid;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
     transition: opacity .2s, visibility .2s;
   }
   
@@ -282,3 +296,16 @@ display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .backtotop {
+    float: left;
+    margin: 20px;
+    z-index: 9960;
+  }
+
+  .socialdiv {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
