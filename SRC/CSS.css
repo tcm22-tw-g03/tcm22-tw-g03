@@ -134,10 +134,8 @@ body {
 }
 
 .center {
+    display: block;
     align-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
 }
 
 a:link {
@@ -190,7 +188,6 @@ a:visited {
 
 [data-columns] {
     display: grid;
-<<<<<<< HEAD
     align-content: center;
     align-items: center;
     align-self: center;
@@ -249,7 +246,17 @@ a:visited {
     max-width: 670px;
     float: inline-end;
 }
-=======
+.centerimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid white;
+}
+
+
+[data-columns] {
+    display: grid;
     grid-gap: 1rem;
     padding: 1rem;
     margin: 0 0 1rem 0;
@@ -264,4 +271,3 @@ a:visited {
     background: #64B5F6;
     grid-template-columns: repeat(2, 1fr);
   }
->>>>>>> 57b1295ea75d3a9c98afadf18b88eb98aa15233e
