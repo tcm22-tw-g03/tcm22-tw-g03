@@ -178,3 +178,15 @@ a:visited {
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+li {
+    list-style: square;
+}
+
+button {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
