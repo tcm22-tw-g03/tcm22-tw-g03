@@ -336,3 +336,19 @@ iframe {
     object-fit: cover;
     overflow: hidden;
 }
+
+.centercol img[src="/SRC/IMAGENS/news3.jpg"] {
+    z-index: 4000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.centercol img[src="/SRC/IMAGENS/news4.jpg"] {
+    z-index: 4000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
