@@ -417,3 +417,28 @@ th, td {
 .forms {
     margin-top: 100px;
 }
+
+.first {
+    width: 100px;
+    margin-left: 330px;
+    margin-bottom: -150px;
+    transform: rotate(30deg);
+
+}
+
+.second {
+    width: 100px;
+    margin-left: 300px;
+    margin-bottom: -90px;
+    bottom: 100px;
+    transform: rotate(30deg);
+
+}
+
+.third {
+    width: 100px;
+    margin-left: 300px;
+    margin-bottom: -90px;
+    transform: rotate(30deg);
+
+}
