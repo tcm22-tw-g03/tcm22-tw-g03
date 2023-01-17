@@ -24,7 +24,8 @@
     </div>
     <img class="rules" src="IMAGENS/002.jpg">
 
-    <button href="#" class="centertext center" id="btn-Convert-Html2Image" onclick="trocarDivPorImagem()" style=z-index:9980; >Court Layout</button>
+    <button href="#" class="centertext center" id="btn-Convert-Html2Image" onclick="trocarDivPorImagem()"
+        style=z-index:9980;>Court Layout</button>
 
     <div id="tudo" class="centertext aMostrar">
 
@@ -89,19 +90,22 @@
             <li>The game starts with a coin toss to determine which player must serve first and which side they want to
                 serve
                 from.</li>
-                <ul>
-            <li>The server must then serve each point from alternative sides on the base line. At no point must the
-                server’s
-                feet move in front of the baseline on the court prior to hitting their serve.</li>
-            <li>If the server fails to get their first serve in they may take advantage of a second serve. If they again
-                fail to
-                get their second serve in then a double fault will be called and the point lost.</li>
-            <li>If the server clips the net but the ball goes in the service area still then let is called and they get
-                to take
-                that serve again without penalty. If the ball hits the net and fails to go in the service area then out
-                is
-                called and they lose that serve.</li>
-                </ul>
+            <ul>
+                <li>The server must then serve each point from alternative sides on the base line. At no point must the
+                    server’s
+                    feet move in front of the baseline on the court prior to hitting their serve.</li>
+                <li>If the server fails to get their first serve in they may take advantage of a second serve. If they
+                    again
+                    fail to
+                    get their second serve in then a double fault will be called and the point lost.</li>
+                <li>If the server clips the net but the ball goes in the service area still then let is called and they
+                    get
+                    to take
+                    that serve again without penalty. If the ball hits the net and fails to go in the service area then
+                    out
+                    is
+                    called and they lose that serve.</li>
+            </ul>
             <li>The receiver may stand where they wish upon receipt of the serve. If the ball is struck without the
                 serve
                 bouncing then the server will receive the point.</li>
@@ -135,8 +139,8 @@
                 Enter Your Text Here:<br>
                 <input type="text" name="textdata"><br>
                 <input type="submit" name="submit" id="submit">
-                
-              </form>
+
+            </form>
         </div>
         <img class="rules" src="IMAGENS/003.png">
     </div>
@@ -154,7 +158,7 @@
                         src="/SRC/IMAGENS/icon 3.png" alt="facebooklogo"></a>
                 <a href="https://www.youtube.com/channel/UCDitdIjOjS9Myza9I21IqzQ" target="_blank"><img class="socials"
                         src="/SRC/IMAGENS/icon 2.png" alt="youtubelogo"></a>
-                </div>
+            </div>
         </div>
     </div>
 
@@ -164,14 +168,14 @@
         function trocarDivPorImagem() {
             var element = document.getElementById('tudo');
 
-            if (element.classList.contains("aMostrar")){
-                
+            if (element.classList.contains("aMostrar")) {
+
                 divTudo = element.innerHTML;
                 element.classList.remove("aMostrar");
                 element.classList.add("escondido");
                 document.getElementById('tudo').innerHTML = "<img src=\"IMAGENS/004.png\" alt=''>"
             }
-            else if(element.classList.contains("escondido")){
+            else if (element.classList.contains("escondido")) {
 
                 element.classList.remove("escondido");
                 element.classList.add("aMostrar");
@@ -180,37 +184,37 @@
         }
     </script>
 
-<script>
-    const form  = document.getElementById('formulario');
+    <script>
+        const form = document.getElementById('formulario');
 
-    function submitForm(e){
-        event.preventDefault();
-        var xmlDoc = document.implementation.createDocument(null, "form");
-        newElement = xmlDoc.createElement("teste");
-        newElement.textContent = "asd";
+        function submitForm(e) {
+            event.preventDefault();
+            var xmlDoc = document.implementation.createDocument(null, "form");
+            newElement = xmlDoc.createElement("teste");
+            newElement.textContent = "asd";
 
-        x = xmlDoc.getElementsByTagName("form")[0]
-        x.appendChild(newElement);
+            x = xmlDoc.getElementsByTagName("form")[0]
+            x.appendChild(newElement);
 
-        const teste = new XMLSerializer().serializeToString(xmlDoc);
+            const teste = new XMLSerializer().serializeToString(xmlDoc);
 
-        const blob = new Blob([teste], {type: "octet-stream"});
-        const href = URL.createObjectURL(blob);
+            const blob = new Blob([teste], { type: "octet-stream" });
+            const href = URL.createObjectURL(blob);
 
-        const a = Object.assign(document.createElement("a"), {
-            href,
-            style: "display:none",
-            download: "myData.xml",
-        })
+            const a = Object.assign(document.createElement("a"), {
+                href,
+                style: "display:none",
+                download: "myData.xml",
+            })
 
-        document.body.appendChild(a);
-        a.click();
-    }
+            document.body.appendChild(a);
+            a.click();
+        }
 
-    form.addEventListener('submit', submitForm);
+        form.addEventListener('submit', submitForm);
 
-    
-</script>
+
+    </script>
 </body>
 
 </html>

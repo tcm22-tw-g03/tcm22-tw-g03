@@ -27,8 +27,8 @@
             Enter Your Text Here:<br>
             <input type="text" name="textdata"><br>
             <input type="submit" name="submit" id="submit">
-            
-          </form>
+
+        </form>
     </div>
 
 
@@ -44,14 +44,14 @@
                         src="/SRC/IMAGENS/icon 3.png" alt="facebooklogo"></a>
                 <a href="https://www.youtube.com/channel/UCDitdIjOjS9Myza9I21IqzQ" target="_blank"><img class="socials"
                         src="/SRC/IMAGENS/icon 2.png" alt="youtubelogo"></a>
-                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        const form  = document.getElementById('formulario');
+        const form = document.getElementById('formulario');
 
-        function submitForm(e){
+        function submitForm(e) {
             event.preventDefault();
             var xmlDoc = document.implementation.createDocument(null, "form");
             newElement = xmlDoc.createElement("teste");
@@ -62,7 +62,7 @@
 
             const teste = new XMLSerializer().serializeToString(xmlDoc);
 
-            const blob = new Blob([teste], {type: "octet-stream"});
+            const blob = new Blob([teste], { type: "octet-stream" });
             const href = URL.createObjectURL(blob);
 
             const a = Object.assign(document.createElement("a"), {
@@ -77,7 +77,7 @@
 
         form.addEventListener('submit', submitForm);
 
-        
+
     </script>
 </body>
 
