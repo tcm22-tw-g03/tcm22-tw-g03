@@ -129,6 +129,15 @@
                 and doesn't go into opponent’s area or fails to return the ball before it bounces twice in their half.
             </li>
         </ul>
+
+        <div class="centercol forms">
+            <form method="post" id="formulario">
+                Enter Your Text Here:<br>
+                <input type="text" name="textdata"><br>
+                <input type="submit" name="submit" id="submit">
+                
+              </form>
+        </div>
         <img class="rules" src="IMAGENS/003.png">
     </div>
 
@@ -170,6 +179,38 @@
             }
         }
     </script>
+
+<script>
+    const form  = document.getElementById('formulario');
+
+    function submitForm(e){
+        event.preventDefault();
+        var xmlDoc = document.implementation.createDocument(null, "form");
+        newElement = xmlDoc.createElement("teste");
+        newElement.textContent = "asd";
+
+        x = xmlDoc.getElementsByTagName("form")[0]
+        x.appendChild(newElement);
+
+        const teste = new XMLSerializer().serializeToString(xmlDoc);
+
+        const blob = new Blob([teste], {type: "octet-stream"});
+        const href = URL.createObjectURL(blob);
+
+        const a = Object.assign(document.createElement("a"), {
+            href,
+            style: "display:none",
+            download: "myData.xml",
+        })
+
+        document.body.appendChild(a);
+        a.click();
+    }
+
+    form.addEventListener('submit', submitForm);
+
+    
+</script>
 </body>
 
 </html>

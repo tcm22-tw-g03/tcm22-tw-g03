@@ -53,11 +53,11 @@
 
         function submitForm(e){
             event.preventDefault();
-            var xmlDoc = document.implementation.createDocument(null, "coisas");
+            var xmlDoc = document.implementation.createDocument(null, "form");
             newElement = xmlDoc.createElement("teste");
             newElement.textContent = "asd";
-            
-            x = xmlDoc.getElementsByTagName("coisas")[0]
+
+            x = xmlDoc.getElementsByTagName("form")[0]
             x.appendChild(newElement);
 
             const teste = new XMLSerializer().serializeToString(xmlDoc);
