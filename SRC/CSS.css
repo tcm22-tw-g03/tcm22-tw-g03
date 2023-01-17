@@ -123,6 +123,15 @@ body {
     margin-right: auto;
 }
 
+.centercolforms{
+    display: grid;
+    margin-top: 100px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
 .centercol img[src="/SRC/IMAGENS/001.jpg"] {
     z-index: 4000;
     width: 100%;
