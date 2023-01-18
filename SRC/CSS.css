@@ -236,7 +236,7 @@ a:visited {
 }
 
 .card {
-    margin: 20px;
+    margin: auto;
     padding-top: 100px;
 }
 
@@ -429,25 +429,27 @@ th, td {
 
 .first {
     width: 100px;
-    margin-left: 330px;
-    margin-bottom: -150px;
+    margin-left: 10px;
+    margin-right: -20px;
+    margin-bottom: -130px;
     transform: rotate(30deg);
 
 }
 
 .second {
     width: 100px;
-    margin-left: 300px;
-    margin-bottom: -90px;
-    bottom: 100px;
+    margin-left: -930px;
+    margin-right: -20px;
+    margin-bottom: -110px;
     transform: rotate(30deg);
 
 }
 
 .third {
     width: 100px;
-    margin-left: 300px;
-    margin-bottom: -90px;
+    margin-left: 230px;
+    margin-right: -20px;
+    margin-bottom: -110px;
     transform: rotate(30deg);
 
 }
