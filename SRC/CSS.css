@@ -429,7 +429,7 @@ th, td {
 
 .first {
     width: 100px;
-    margin-left: 10px;
+    margin-left:280px;
     margin-right: -20px;
     margin-bottom: -130px;
     transform: rotate(30deg);
@@ -438,7 +438,7 @@ th, td {
 
 .second {
     width: 100px;
-    margin-left: -930px;
+    margin-left: -990px;
     margin-right: -20px;
     margin-bottom: -110px;
     transform: rotate(30deg);
@@ -447,7 +447,7 @@ th, td {
 
 .third {
     width: 100px;
-    margin-left: 230px;
+    margin-left: 340px;
     margin-right: -20px;
     margin-bottom: -110px;
     transform: rotate(30deg);
